@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <!-- Pagina Principal -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>ServletIndex</welcome-file>
+    </welcome-file-list>
+    <filter>
+        <filter-name>FilterSesion</filter-name>
+        <filter-class>com.mycompany.campus.filtro.FilterSesion</filter-class>
+    </filter>
+<!--    <filter-mapping>
+        <filter-name>FilterSesion</filter-name>
+        <url-pattern>/DropCurso</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>FilterSesion</filter-name>
+        <url-pattern>/NewNoCurso</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>FilterSesion</filter-name>
+        <url-pattern>/DropInfo</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>FilterSesion</filter-name>
+        <url-pattern>/NoServletContent</url-pattern>
+    </filter-mapping>-->
+<!--    <filter-mapping>
+        <filter-name>FilterSesion</filter-name>
+        <url-pattern>/ServletCursoProf</url-pattern>
+    </filter-mapping>-->
+<!--    <filter-mapping>
+        <filter-name>FilterSesion</filter-name>
+        <url-pattern>/ServletDropTema</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>FilterSesion</filter-name>
+        <url-pattern>/ServletNewCurso</url-pattern>
+    </filter-mapping>-->
+<!--    <filter-mapping>
+        <filter-name>FilterSesion</filter-name>
+        <url-pattern>/ServletNewTema</url-pattern>
+    </filter-mapping>-->
+<!--    <filter-mapping>
+        <filter-name>FilterSesion</filter-name>
+        <url-pattern>/ServletPrincipal</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>FilterSesion</filter-name>
+        <url-pattern>/ServletPublicar</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>FilterSesion</filter-name>
+        <url-pattern>/ServletnewContent</url-pattern>
+    </filter-mapping>-->
+
+
+
+    <filter>
+        <filter-name>FilterSesionClien</filter-name>
+        <filter-class>com.mycompany.campus.filtro.FilterSesionClien</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterSesionClien</filter-name>
+        <url-pattern>/Curso</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>FilterSesionClien</filter-name>
+        <url-pattern>/ServletAddCurso</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>FilterSesionClien</filter-name>
+        <url-pattern>/ServletFactura</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>FilterSesionClien</filter-name>
+        <url-pattern>/ServletCursos</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>FilterSesionClien</filter-name>
+        <url-pattern>/ServletMisCursos</url-pattern>
+    </filter-mapping>
+    <session-config>
+        <session-timeout>
+            300000
+        </session-timeout>
+    </session-config>
+</web-app>

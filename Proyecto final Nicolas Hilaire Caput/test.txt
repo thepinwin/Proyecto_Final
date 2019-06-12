@@ -1,0 +1,29 @@
+****CAMPUS ONLINE****
+
+Campus onlone es una página web para realizar cursos desde cualquier lugar.
+
+Los cursos y usuarios introducidos son de preuba:
+
+
+Usuario profesor:
+	
+	profesor@gmail.com
+
+Contraseña:
+
+	admin
+
+
+Usuario Cliente:
+
+	prueba@prueba.com
+
+Contraseña: 
+
+	admin
+
+
+Hibernate user for MySQL:
+
+user: root
+Pass: admin
